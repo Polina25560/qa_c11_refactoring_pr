@@ -18,7 +18,7 @@ def new_courier_data():
 
 
 @pytest.mark.usefixtures("fake_server")
-class TestCourierHelpers:
+class TestCourierMain:
     """Тесты для процедурных хелперов."""
 
     def test_get_courier_by_id(self):
