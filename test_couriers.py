@@ -21,7 +21,7 @@ def new_courier_data():
 
 
 @pytest.mark.usefixtures("fake_server")
-class TestCourierAPIClient:
+class TestCourierFeature:
     def test_get_courier_by_id(self, client):
         courier = client.get_courier_by_id(1)
         assert courier["id"] == 1
